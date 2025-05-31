@@ -1,0 +1,9 @@
+php artisan serve
+cd /Applications/XAMPP/xamppfiles/htdocs/admin_tosil
+
+# Change permissions for storage and cache directories
+sudo chmod -R 777 resources/lang/ar
+sudo chown -R $(whoami):_www resources/lang/ar
+
+sudo chmod -R 775 /Applications/XAMPP/xamppfiles/htdocs/admin_tosil/resources/lang/ar
+sudo chown -R $(whoami):staff /Applications/XAMPP/xamppfiles/htdocs/admin_tosil/resources/lang/ar
